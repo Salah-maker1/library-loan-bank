@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Library loan bank - Borrower</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <div class="top-bar">
+      <h1>Library loan bank</h1>
+      <a href="index.html" class="logout-link">Logout</a>
+    </div>
+    <h2>Borrow a Book</h2>
+
+    <form id="borrowForm">
+      <label for="userName">Your Full Name</label>
+      <input type="text" id="userName" required placeholder="e.g. Ali Hassan">
+
+      <label for="userId">Your ID</label>
+      <input type="text" id="userId" required placeholder="e.g. 205">
+
+      <label for="bookSelect">Choose a Book</label>
+      <select id="bookSelect" required>
+        <option value="The Great Gatsby">The Great Gatsby</option>
+        <option value="1984">1984</option>
+        <option value="To Kill a Mockingbird">To Kill a Mockingbird</option>
+        <option value="Clean Code">Clean Code</option>
+        <option value="The Alchemist">The Alchemist</option>
+      </select>
+
+      <label for="daysSelect">Borrow Duration</label>
+      <select id="daysSelect" required>
+        <option value="5">5 Days ($7)</option>
+        <option value="10">10 Days ($10)</option>
+      </select>
+
+      <button type="submit">Confirm Borrow</button>
+    </form>
+
+    <div id="feedbackMsg" class="feedback" role="status" aria-live="polite"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

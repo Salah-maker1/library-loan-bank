@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Library loan bank - Librarian</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container wide">
+    <div class="top-bar">
+      <h1>Library loan bank</h1>
+      <a href="index.html" class="logout-link">Logout</a>
+    </div>
+    <h2>All Borrowed Accounts</h2>
+
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Borrower Name</th>
+          <th>Book Name</th>
+          <th>Duration</th>
+          <th>Paid</th>
+          <th>Status (Click to Toggle)</th>
+        </tr>
+      </thead>
+      <tbody id="loansTableBody">
+        <!-- Rows load here automatically -->
+      </tbody>
+    </table>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
